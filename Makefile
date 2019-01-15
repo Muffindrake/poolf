@@ -32,5 +32,6 @@ clean:
 DESTINATION = $(DESTDIR)$(PREFIX)
 install: all
 	install -m 0755 $(PROG) $(DESTINATION)/bin
+	install -m 0755 poolfdl $(DESTINATION)/bin
 
 -include $(DEPS)
