@@ -1,6 +1,6 @@
 #!/bin/sh
 poolf $1                                                                \
-        | awk '{printf "%s %s\n", $0, $0}'                              \
+        | awk '{printf "%s \"%s\"\n", $0, $0}'                          \
         | sed -e 's,https://[^ ]*/,,'                                   \
         | nl -nrz -s'	' -w5                                           \
         | sed -e 's,\t,_,'                                              \
