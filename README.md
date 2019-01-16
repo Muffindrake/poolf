@@ -27,7 +27,7 @@ $ su -c "make install"
 - GNU make
 
 # library dependencies (runtime and development headers
-- libcurl
+- libcurl 7.62.0 or later
 - jansson
 
 # license
